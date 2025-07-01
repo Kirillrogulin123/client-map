@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_41905940cfc8768edcff7bf2188c86c1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_41905940cfc8768edcff7bf2188c86c1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_41905940cfc8768edcff7bf2188c86c1 = L.map(
+                "map_41905940cfc8768edcff7bf2188c86c1",
+                {
+                    center: [58.0, 60.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c0399015456c4663972c4b35e0a7c19f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_41905940cfc8768edcff7bf2188c86c1);
+        
+    
+            var marker_cluster_220d374cc6cdb098aa747822a45bcf3e = L.markerClusterGroup(
+                {}
+            );
+            map_41905940cfc8768edcff7bf2188c86c1.addLayer(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+            var marker_126e762cd8da4b6b5302bf84b8f854cc = L.marker(
+                [55.75822, 37.57289],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_11eaffa3b1b4adbbaffe5e00899e27c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_278ab310fef5b90a98d84a2c6c2ea412 = $(`<div id="html_278ab310fef5b90a98d84a2c6c2ea412" style="width: 100.0%; height: 100.0%;">Клиент №1</div>`)[0];
+            popup_11eaffa3b1b4adbbaffe5e00899e27c7.setContent(html_278ab310fef5b90a98d84a2c6c2ea412);
+        
+
+        marker_126e762cd8da4b6b5302bf84b8f854cc.bindPopup(popup_11eaffa3b1b4adbbaffe5e00899e27c7)
+        ;
+
+        
+    
+    
+            marker_126e762cd8da4b6b5302bf84b8f854cc.bindTooltip(
+                `<div>
+                     г. Москва, вн.тер. г. Муниципальный округ Пресненский, пер. Капранова, д. 3, стр. 3, помещ. 1/2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_310f7f77c20b6a10ed4e4d24e466c28e = L.marker(
+                [56.936097, 60.787423],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_83749c3b88127afd8c218fe6a8d02270 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9db650dde2d444afdf2db9fc20980769 = $(`<div id="html_9db650dde2d444afdf2db9fc20980769" style="width: 100.0%; height: 100.0%;">Клиент №2</div>`)[0];
+            popup_83749c3b88127afd8c218fe6a8d02270.setContent(html_9db650dde2d444afdf2db9fc20980769);
+        
+
+        marker_310f7f77c20b6a10ed4e4d24e466c28e.bindPopup(popup_83749c3b88127afd8c218fe6a8d02270)
+        ;
+
+        
+    
+    
+            marker_310f7f77c20b6a10ed4e4d24e466c28e.bindTooltip(
+                `<div>
+                     Свердловская обл., г. Березовский, тер. П.Ленинский, зд. 28, стр. 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38544ea7aaaba60b3def618d50a226db = L.marker(
+                [53.181337, 50.076442],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_cd0738dbbd7b3b56596e757c7ebd4c4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e2319e6f573ca5a9065f3450a77f75f = $(`<div id="html_3e2319e6f573ca5a9065f3450a77f75f" style="width: 100.0%; height: 100.0%;">Клиент №3</div>`)[0];
+            popup_cd0738dbbd7b3b56596e757c7ebd4c4c.setContent(html_3e2319e6f573ca5a9065f3450a77f75f);
+        
+
+        marker_38544ea7aaaba60b3def618d50a226db.bindPopup(popup_cd0738dbbd7b3b56596e757c7ebd4c4c)
+        ;
+
+        
+    
+    
+            marker_38544ea7aaaba60b3def618d50a226db.bindTooltip(
+                `<div>
+                     443099, Самарская область, г Самара, ул Водников, д. 28/30, этаж 4 ком./офис 68.1/404 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_292ac10feb7af8d072ef6901660d2fdb = L.marker(
+                [55.619564, 51.929882],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_1379721b2f987eed2e883b2e0d9f6d7c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_503101b6cb49b9b7fbfd1582a7058f0c = $(`<div id="html_503101b6cb49b9b7fbfd1582a7058f0c" style="width: 100.0%; height: 100.0%;">Клиент №4</div>`)[0];
+            popup_1379721b2f987eed2e883b2e0d9f6d7c.setContent(html_503101b6cb49b9b7fbfd1582a7058f0c);
+        
+
+        marker_292ac10feb7af8d072ef6901660d2fdb.bindPopup(popup_1379721b2f987eed2e883b2e0d9f6d7c)
+        ;
+
+        
+    
+    
+            marker_292ac10feb7af8d072ef6901660d2fdb.bindTooltip(
+                `<div>
+                     респ. Татарстан, г. Нижнекамск, ул. Соболековская, д. 43, к. 1, каб 3-3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_091a34606b1d0c198ce4ecd1a14a512c = L.marker(
+                [55.777555, 37.649454],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_962c9459e738697aeb3a65feebec8b55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbc429b4ddb74e5d862dc75aeee447a2 = $(`<div id="html_dbc429b4ddb74e5d862dc75aeee447a2" style="width: 100.0%; height: 100.0%;">Клиент №5</div>`)[0];
+            popup_962c9459e738697aeb3a65feebec8b55.setContent(html_dbc429b4ddb74e5d862dc75aeee447a2);
+        
+
+        marker_091a34606b1d0c198ce4ecd1a14a512c.bindPopup(popup_962c9459e738697aeb3a65feebec8b55)
+        ;
+
+        
+    
+    
+            marker_091a34606b1d0c198ce4ecd1a14a512c.bindTooltip(
+                `<div>
+                     г. Москва, вн.тер.г. Муниципальный округ Красносельский, ул. Каланчевская, д. 16, стр. 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aea0791427717753221fce1dc3e80367 = L.marker(
+                [55.755819, 37.617644],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_7a61d5a1f7bd9dea2b63a94ff39b7851 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_286b4f237518e04474de3e5890a66ff2 = $(`<div id="html_286b4f237518e04474de3e5890a66ff2" style="width: 100.0%; height: 100.0%;">Клиент №6</div>`)[0];
+            popup_7a61d5a1f7bd9dea2b63a94ff39b7851.setContent(html_286b4f237518e04474de3e5890a66ff2);
+        
+
+        marker_aea0791427717753221fce1dc3e80367.bindPopup(popup_7a61d5a1f7bd9dea2b63a94ff39b7851)
+        ;
+
+        
+    
+    
+            marker_aea0791427717753221fce1dc3e80367.bindTooltip(
+                `<div>
+                     г. Москва, вн.тер.г. Муниципальный округ Пресненский, наб. Пресненская, д. 12, помещ. 10/45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_290789e12ad1555409c44ce109c274e6 = L.marker(
+                [60.266478, 29.616745],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_e3d14001a8ff2ba1618068f9b11962b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6427a20f374f7af24e14d28cc904ae6 = $(`<div id="html_a6427a20f374f7af24e14d28cc904ae6" style="width: 100.0%; height: 100.0%;">Клиент №7</div>`)[0];
+            popup_e3d14001a8ff2ba1618068f9b11962b4.setContent(html_a6427a20f374f7af24e14d28cc904ae6);
+        
+
+        marker_290789e12ad1555409c44ce109c274e6.bindPopup(popup_e3d14001a8ff2ba1618068f9b11962b4)
+        ;
+
+        
+    
+    
+            marker_290789e12ad1555409c44ce109c274e6.bindTooltip(
+                `<div>
+                     188820, Ленинградская область, Выборгский район, городской поселок Рощино, Первомайская ул, д. 2ш, кабинет 1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91ff649f6cc2198fcdddcaf433b43325 = L.marker(
+                [59.907433, 30.276522],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_342b292fc9b544cb9b9c2be898152e1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_43f7a5efe6899a1d40de11f0594cd885 = $(`<div id="html_43f7a5efe6899a1d40de11f0594cd885" style="width: 100.0%; height: 100.0%;">Клиент №8</div>`)[0];
+            popup_342b292fc9b544cb9b9c2be898152e1f.setContent(html_43f7a5efe6899a1d40de11f0594cd885);
+        
+
+        marker_91ff649f6cc2198fcdddcaf433b43325.bindPopup(popup_342b292fc9b544cb9b9c2be898152e1f)
+        ;
+
+        
+    
+    
+            marker_91ff649f6cc2198fcdddcaf433b43325.bindTooltip(
+                `<div>
+                     г. Санкт-Петербург, вн.тер. г. Муниципальный округ Екатерингофский, пр-кт Старо-Петергофский, д. 22, к. 2, помещ. 9-Н
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b74518031e8dd13a72e816ee75219599 = L.marker(
+                [52.749186, 103.667407],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_90f49395f95caa89c4ada9551d28b58d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9dabdaf54689b763eb130dacd91f6784 = $(`<div id="html_9dabdaf54689b763eb130dacd91f6784" style="width: 100.0%; height: 100.0%;">Клиент №9</div>`)[0];
+            popup_90f49395f95caa89c4ada9551d28b58d.setContent(html_9dabdaf54689b763eb130dacd91f6784);
+        
+
+        marker_b74518031e8dd13a72e816ee75219599.bindPopup(popup_90f49395f95caa89c4ada9551d28b58d)
+        ;
+
+        
+    
+    
+            marker_b74518031e8dd13a72e816ee75219599.bindTooltip(
+                `<div>
+                     665451, Иркутская область, город Усолье-Сибирское, Интернациональная ул., д.87 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a81be207240ccc962a630992a66acb0 = L.marker(
+                [57.732613, 41.001975],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_51a3838e059f619d19c64f7e989ceb44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f25fc1a723916c92e7d6af1ca49fe4d6 = $(`<div id="html_f25fc1a723916c92e7d6af1ca49fe4d6" style="width: 100.0%; height: 100.0%;">Клиент №10</div>`)[0];
+            popup_51a3838e059f619d19c64f7e989ceb44.setContent(html_f25fc1a723916c92e7d6af1ca49fe4d6);
+        
+
+        marker_4a81be207240ccc962a630992a66acb0.bindPopup(popup_51a3838e059f619d19c64f7e989ceb44)
+        ;
+
+        
+    
+    
+            marker_4a81be207240ccc962a630992a66acb0.bindTooltip(
+                `<div>
+                     156016, Костромская область, город Кострома, Профсоюзная ул., д. 14а, помещ. 1 каб.3 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a71693dbe1940082562dd68dd0e3dcfa = L.marker(
+                [55.729062, 37.570375],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_9cc921d70cdf8f530e98623015f8116b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48decff9c5daf666e8e21f60b21fb027 = $(`<div id="html_48decff9c5daf666e8e21f60b21fb027" style="width: 100.0%; height: 100.0%;">Клиент №11</div>`)[0];
+            popup_9cc921d70cdf8f530e98623015f8116b.setContent(html_48decff9c5daf666e8e21f60b21fb027);
+        
+
+        marker_a71693dbe1940082562dd68dd0e3dcfa.bindPopup(popup_9cc921d70cdf8f530e98623015f8116b)
+        ;
+
+        
+    
+    
+            marker_a71693dbe1940082562dd68dd0e3dcfa.bindTooltip(
+                `<div>
+                     119435, город Москва, Малая Пироговская ул, д. 13 стр. 1, офис 318 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e32f46bc056f0a49b7565cc1c5a5417 = L.marker(
+                [59.881656, 30.273908],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_70b13abcc9cd7024449cf999ff547d07 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b71ec7fccc59942f2f9830a4ed352f12 = $(`<div id="html_b71ec7fccc59942f2f9830a4ed352f12" style="width: 100.0%; height: 100.0%;">Клиент №12</div>`)[0];
+            popup_70b13abcc9cd7024449cf999ff547d07.setContent(html_b71ec7fccc59942f2f9830a4ed352f12);
+        
+
+        marker_1e32f46bc056f0a49b7565cc1c5a5417.bindPopup(popup_70b13abcc9cd7024449cf999ff547d07)
+        ;
+
+        
+    
+    
+            marker_1e32f46bc056f0a49b7565cc1c5a5417.bindTooltip(
+                `<div>
+                     г. Санкт-Петербург, вн.тер.г. Муниципальный округ Автово, ул. Возрождения, д. 20а, литера А, помещ. 12-Н, ком. 17-3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66e313dfae21504e73fd7583bb70026e = L.marker(
+                [60.16015, 30.213298],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_156bf56c780ad7eb7ced76fd010febc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86c50c649b0db9680af344d99b4db9a2 = $(`<div id="html_86c50c649b0db9680af344d99b4db9a2" style="width: 100.0%; height: 100.0%;">Клиент №13</div>`)[0];
+            popup_156bf56c780ad7eb7ced76fd010febc7.setContent(html_86c50c649b0db9680af344d99b4db9a2);
+        
+
+        marker_66e313dfae21504e73fd7583bb70026e.bindPopup(popup_156bf56c780ad7eb7ced76fd010febc7)
+        ;
+
+        
+    
+    
+            marker_66e313dfae21504e73fd7583bb70026e.bindTooltip(
+                `<div>
+                     188632, Ленинградская область, Всеволожский р-н, г Сертолово, мкр. Сертолово-2, Тихвинская ул, д. 8 к. 1, помещ. 1-н ч.п. 1-н 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c984bda438c411f23fe1227d9da1d98d = L.marker(
+                [59.989931, 30.241865],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_d14c58210187567264a6ea8ea86a5620 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0192e169dd396f5103202f661fe335e6 = $(`<div id="html_0192e169dd396f5103202f661fe335e6" style="width: 100.0%; height: 100.0%;">Клиент №14</div>`)[0];
+            popup_d14c58210187567264a6ea8ea86a5620.setContent(html_0192e169dd396f5103202f661fe335e6);
+        
+
+        marker_c984bda438c411f23fe1227d9da1d98d.bindPopup(popup_d14c58210187567264a6ea8ea86a5620)
+        ;
+
+        
+    
+    
+            marker_c984bda438c411f23fe1227d9da1d98d.bindTooltip(
+                `<div>
+                     197374, город Санкт-Петербург, Мебельная ул., д. 12 к. 1 литер а, помещ. 20н офис 110 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_199affab1e6563d99f4ae5eda2e50277 = L.marker(
+                [56.463128, 84.957018],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_f9d3c9776dda00854eeb86742c0d9b26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a3929396cb24b074a5bedaf917eec06 = $(`<div id="html_7a3929396cb24b074a5bedaf917eec06" style="width: 100.0%; height: 100.0%;">Клиент №15</div>`)[0];
+            popup_f9d3c9776dda00854eeb86742c0d9b26.setContent(html_7a3929396cb24b074a5bedaf917eec06);
+        
+
+        marker_199affab1e6563d99f4ae5eda2e50277.bindPopup(popup_f9d3c9776dda00854eeb86742c0d9b26)
+        ;
+
+        
+    
+    
+            marker_199affab1e6563d99f4ae5eda2e50277.bindTooltip(
+                `<div>
+                     634034, Томская область, город Томск, ул. Белинского, д.53 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72e48982b6d4be93f805d9f015121665 = L.marker(
+                [59.928054, 30.344435],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_6cd088cb669fbca2ee0a2a4bd3734da1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdd12002758388faa50a0200b3107e63 = $(`<div id="html_bdd12002758388faa50a0200b3107e63" style="width: 100.0%; height: 100.0%;">Клиент №16</div>`)[0];
+            popup_6cd088cb669fbca2ee0a2a4bd3734da1.setContent(html_bdd12002758388faa50a0200b3107e63);
+        
+
+        marker_72e48982b6d4be93f805d9f015121665.bindPopup(popup_6cd088cb669fbca2ee0a2a4bd3734da1)
+        ;
+
+        
+    
+    
+            marker_72e48982b6d4be93f805d9f015121665.bindTooltip(
+                `<div>
+                     191002, город Санкт-Петербург, пер. Щербаков, д.17а литера б, пом 6н 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cea93d6e5dda72c7dcc38383fb941e3 = L.marker(
+                [55.740132, 37.663809],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_bd7bbc3cbdbceef0c67d77f402b190c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_85045612861a115f26fe98b092e1e436 = $(`<div id="html_85045612861a115f26fe98b092e1e436" style="width: 100.0%; height: 100.0%;">Клиент №17</div>`)[0];
+            popup_bd7bbc3cbdbceef0c67d77f402b190c4.setContent(html_85045612861a115f26fe98b092e1e436);
+        
+
+        marker_9cea93d6e5dda72c7dcc38383fb941e3.bindPopup(popup_bd7bbc3cbdbceef0c67d77f402b190c4)
+        ;
+
+        
+    
+    
+            marker_9cea93d6e5dda72c7dcc38383fb941e3.bindTooltip(
+                `<div>
+                     109147, город Москва, Таганская ул, д. 17-23 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aee3df3b1daa157aa1505f74c8b169e = L.marker(
+                [53.979812, 38.165024],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_2b4389575b5872d1485f711ef1d9caa4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bfeb6c6e925164d6b309ea658f54a777 = $(`<div id="html_bfeb6c6e925164d6b309ea658f54a777" style="width: 100.0%; height: 100.0%;">Клиент №18</div>`)[0];
+            popup_2b4389575b5872d1485f711ef1d9caa4.setContent(html_bfeb6c6e925164d6b309ea658f54a777);
+        
+
+        marker_4aee3df3b1daa157aa1505f74c8b169e.bindPopup(popup_2b4389575b5872d1485f711ef1d9caa4)
+        ;
+
+        
+    
+    
+            marker_4aee3df3b1daa157aa1505f74c8b169e.bindTooltip(
+                `<div>
+                     обл. Тульская, м.р-н Узловский, г. Узловая, ул. Гагарина, д. 16, офис 103
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eee8795f755b0d226162cc37c8376ed5 = L.marker(
+                [59.993622, 30.244632],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_9342dd7e0625173e950b493ad255f5f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8f783c095475156a2d497ba0742cebc3 = $(`<div id="html_8f783c095475156a2d497ba0742cebc3" style="width: 100.0%; height: 100.0%;">Клиент №19</div>`)[0];
+            popup_9342dd7e0625173e950b493ad255f5f1.setContent(html_8f783c095475156a2d497ba0742cebc3);
+        
+
+        marker_eee8795f755b0d226162cc37c8376ed5.bindPopup(popup_9342dd7e0625173e950b493ad255f5f1)
+        ;
+
+        
+    
+    
+            marker_eee8795f755b0d226162cc37c8376ed5.bindTooltip(
+                `<div>
+                     г. Санкт-Петербург, вн.тер.г. Муниципальный округ № 65, ул. Стародеревенская, д. 11, к. 2, офис 327
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b99b1c7d68fb96d1631e69c18de7d06 = L.marker(
+                [56.326799, 44.00652],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_866027f56624f0e9b03c3d36fd4a031b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae1fb34a32d1324a8e6e26b2cccb7631 = $(`<div id="html_ae1fb34a32d1324a8e6e26b2cccb7631" style="width: 100.0%; height: 100.0%;">Клиент №20</div>`)[0];
+            popup_866027f56624f0e9b03c3d36fd4a031b.setContent(html_ae1fb34a32d1324a8e6e26b2cccb7631);
+        
+
+        marker_0b99b1c7d68fb96d1631e69c18de7d06.bindPopup(popup_866027f56624f0e9b03c3d36fd4a031b)
+        ;
+
+        
+    
+    
+            marker_0b99b1c7d68fb96d1631e69c18de7d06.bindTooltip(
+                `<div>
+                     обл. Нижегородская, г. Нижний Новгород, ул. Чаадаева, д. 1, помещ. 17-19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1842595dddaa9bfc2c07a04dc3a8db64 = L.marker(
+                [53.2434, 34.363991],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_aec547bc0369606cb503c351cc85240d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e46e2e045e8c292585ab7312ab3cd49b = $(`<div id="html_e46e2e045e8c292585ab7312ab3cd49b" style="width: 100.0%; height: 100.0%;">Клиент №21</div>`)[0];
+            popup_aec547bc0369606cb503c351cc85240d.setContent(html_e46e2e045e8c292585ab7312ab3cd49b);
+        
+
+        marker_1842595dddaa9bfc2c07a04dc3a8db64.bindPopup(popup_aec547bc0369606cb503c351cc85240d)
+        ;
+
+        
+    
+    
+            marker_1842595dddaa9bfc2c07a04dc3a8db64.bindTooltip(
+                `<div>
+                     обл. Брянская, г. Брянск, д. 44б, офис 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_243d5551c3ae9d87a29a3282103d0ffd = L.marker(
+                [60.03909, 29.988118],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_9f478f38d1c69270b36eaa3b558e7f5d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dffaa7b992818980e2eea5c8ba18ce19 = $(`<div id="html_dffaa7b992818980e2eea5c8ba18ce19" style="width: 100.0%; height: 100.0%;">Клиент №22</div>`)[0];
+            popup_9f478f38d1c69270b36eaa3b558e7f5d.setContent(html_dffaa7b992818980e2eea5c8ba18ce19);
+        
+
+        marker_243d5551c3ae9d87a29a3282103d0ffd.bindPopup(popup_9f478f38d1c69270b36eaa3b558e7f5d)
+        ;
+
+        
+    
+    
+            marker_243d5551c3ae9d87a29a3282103d0ffd.bindTooltip(
+                `<div>
+                     197701, город Санкт-Петербург, Левашовское ш, д. 20 стр. 1, помещ. 7-н ком. 41 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9179bbf501293f0edca67d2c3df7ac90 = L.marker(
+                [57.688105, 62.991718],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_9c70d9d4e140b9e8698fe4579f89324f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c521695a544b53055fedb5fc502e642 = $(`<div id="html_9c521695a544b53055fedb5fc502e642" style="width: 100.0%; height: 100.0%;">Клиент №23</div>`)[0];
+            popup_9c70d9d4e140b9e8698fe4579f89324f.setContent(html_9c521695a544b53055fedb5fc502e642);
+        
+
+        marker_9179bbf501293f0edca67d2c3df7ac90.bindPopup(popup_9c70d9d4e140b9e8698fe4579f89324f)
+        ;
+
+        
+    
+    
+            marker_9179bbf501293f0edca67d2c3df7ac90.bindTooltip(
+                `<div>
+                     обл. Свердловская, г.о. Ирбитское, д. Фомина, ул. Советская, д. 72
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56dcc04877a22bffc67a22e60223fd33 = L.marker(
+                [59.397258, 30.178408],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_de953360727e368884161305290c7a8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cec38d49fe89e7e82ce0dfee1820333c = $(`<div id="html_cec38d49fe89e7e82ce0dfee1820333c" style="width: 100.0%; height: 100.0%;">Клиент №24</div>`)[0];
+            popup_de953360727e368884161305290c7a8c.setContent(html_cec38d49fe89e7e82ce0dfee1820333c);
+        
+
+        marker_56dcc04877a22bffc67a22e60223fd33.bindPopup(popup_de953360727e368884161305290c7a8c)
+        ;
+
+        
+    
+    
+            marker_56dcc04877a22bffc67a22e60223fd33.bindTooltip(
+                `<div>
+                     188354, Ленинградская область, Гатчинский район, тер Промышленная зона Орловские ключи, д. 1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7e6f14d7afc0a662bf8256fdbaa4674 = L.marker(
+                [59.94015, 30.418366],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_e3316e1903c1647f06a08bfc7cf841a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5825087dc8443bbd79907c7e9b2fd184 = $(`<div id="html_5825087dc8443bbd79907c7e9b2fd184" style="width: 100.0%; height: 100.0%;">Клиент №25</div>`)[0];
+            popup_e3316e1903c1647f06a08bfc7cf841a6.setContent(html_5825087dc8443bbd79907c7e9b2fd184);
+        
+
+        marker_e7e6f14d7afc0a662bf8256fdbaa4674.bindPopup(popup_e3316e1903c1647f06a08bfc7cf841a6)
+        ;
+
+        
+    
+    
+            marker_e7e6f14d7afc0a662bf8256fdbaa4674.bindTooltip(
+                `<div>
+                     195027, город Санкт-Петербург, Брантовская дор., д. 3 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef3e1a02ba67dda44343e233394cccb6 = L.marker(
+                [55.740132, 37.663809],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_a77ed93c8c6a2db7e91944a9064b0365 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2db9a91480c935761d5da5f44cc2e53e = $(`<div id="html_2db9a91480c935761d5da5f44cc2e53e" style="width: 100.0%; height: 100.0%;">Клиент №26</div>`)[0];
+            popup_a77ed93c8c6a2db7e91944a9064b0365.setContent(html_2db9a91480c935761d5da5f44cc2e53e);
+        
+
+        marker_ef3e1a02ba67dda44343e233394cccb6.bindPopup(popup_a77ed93c8c6a2db7e91944a9064b0365)
+        ;
+
+        
+    
+    
+            marker_ef3e1a02ba67dda44343e233394cccb6.bindTooltip(
+                `<div>
+                     г. Москва, вн.тер.г. Муниципальный округ Таганский, ул. Таганская, д. 17-23
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb0f416988cf9ef3c064065cb21e2674 = L.marker(
+                [59.574654, 30.127716],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_436f868510259cc9c06c697fa6bae455 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f425fa79e29c51e6b4cd64239253213d = $(`<div id="html_f425fa79e29c51e6b4cd64239253213d" style="width: 100.0%; height: 100.0%;">Клиент №27</div>`)[0];
+            popup_436f868510259cc9c06c697fa6bae455.setContent(html_f425fa79e29c51e6b4cd64239253213d);
+        
+
+        marker_bb0f416988cf9ef3c064065cb21e2674.bindPopup(popup_436f868510259cc9c06c697fa6bae455)
+        ;
+
+        
+    
+    
+            marker_bb0f416988cf9ef3c064065cb21e2674.bindTooltip(
+                `<div>
+                     188300, Ленинградская область, Гатчинский район, город Гатчина, пр-кт 25 Октября, д. 42, офис 106 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b1b790d4cd03f21ff7a569350762ff9 = L.marker(
+                [59.574654, 30.127716],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_71093900c0327ed10c537ab76f661ceb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_669b67b5d25ff2392be44fd7bc31b91a = $(`<div id="html_669b67b5d25ff2392be44fd7bc31b91a" style="width: 100.0%; height: 100.0%;">Клиент №28</div>`)[0];
+            popup_71093900c0327ed10c537ab76f661ceb.setContent(html_669b67b5d25ff2392be44fd7bc31b91a);
+        
+
+        marker_5b1b790d4cd03f21ff7a569350762ff9.bindPopup(popup_71093900c0327ed10c537ab76f661ceb)
+        ;
+
+        
+    
+    
+            marker_5b1b790d4cd03f21ff7a569350762ff9.bindTooltip(
+                `<div>
+                     -
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b65b5b25d39b3591f5354227c6ccd675 = L.marker(
+                [59.859099, 30.325318],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_10529acdfcebfe40c460463342bbf28f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6fcd61351d1ef5691d69f95f5da33246 = $(`<div id="html_6fcd61351d1ef5691d69f95f5da33246" style="width: 100.0%; height: 100.0%;">Клиент №29</div>`)[0];
+            popup_10529acdfcebfe40c460463342bbf28f.setContent(html_6fcd61351d1ef5691d69f95f5da33246);
+        
+
+        marker_b65b5b25d39b3591f5354227c6ccd675.bindPopup(popup_10529acdfcebfe40c460463342bbf28f)
+        ;
+
+        
+    
+    
+            marker_b65b5b25d39b3591f5354227c6ccd675.bindTooltip(
+                `<div>
+                     г. Санкт-Петербург, вн.тер.г. муниципальный округ Московская застава, ул. Гастелло, д. 14, литера А, офис 10с №32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_532036acf9dec8337a180d4c9ccedb47 = L.marker(
+                [62.088999, 49.587291],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_6edcd077feeee76aeb24322c4edd5b17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccc44f3c2db7e962c9deb058a1a3e955 = $(`<div id="html_ccc44f3c2db7e962c9deb058a1a3e955" style="width: 100.0%; height: 100.0%;">Клиент №30</div>`)[0];
+            popup_6edcd077feeee76aeb24322c4edd5b17.setContent(html_ccc44f3c2db7e962c9deb058a1a3e955);
+        
+
+        marker_532036acf9dec8337a180d4c9ccedb47.bindPopup(popup_6edcd077feeee76aeb24322c4edd5b17)
+        ;
+
+        
+    
+    
+            marker_532036acf9dec8337a180d4c9ccedb47.bindTooltip(
+                `<div>
+                     169045, Республика Коми, Усть-Вымский район, поселок городского типа Жешарт, ул. Гагарина, д.1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25decf2051b9ffb6e7cf068e2597198a = L.marker(
+                [59.938676, 30.314494],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_d1f584dee6ea937c7a4df0bdf8877636 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c43e957394f325db9b8af2168a47c210 = $(`<div id="html_c43e957394f325db9b8af2168a47c210" style="width: 100.0%; height: 100.0%;">Клиент №31</div>`)[0];
+            popup_d1f584dee6ea937c7a4df0bdf8877636.setContent(html_c43e957394f325db9b8af2168a47c210);
+        
+
+        marker_25decf2051b9ffb6e7cf068e2597198a.bindPopup(popup_d1f584dee6ea937c7a4df0bdf8877636)
+        ;
+
+        
+    
+    
+            marker_25decf2051b9ffb6e7cf068e2597198a.bindTooltip(
+                `<div>
+                     197136, город Санкт-Петербург, ул. Всеволода Вишневского, д. 12 литер а, помещ. 2-н, к. 703 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63b676fb4d13cbd66dfd4dafba2a9451 = L.marker(
+                [59.378053, 28.601209],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_93184acb45143339cc819eedc3485981 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cca60f8257df651f9d180f3284b42efe = $(`<div id="html_cca60f8257df651f9d180f3284b42efe" style="width: 100.0%; height: 100.0%;">Клиент №32</div>`)[0];
+            popup_93184acb45143339cc819eedc3485981.setContent(html_cca60f8257df651f9d180f3284b42efe);
+        
+
+        marker_63b676fb4d13cbd66dfd4dafba2a9451.bindPopup(popup_93184acb45143339cc819eedc3485981)
+        ;
+
+        
+    
+    
+            marker_63b676fb4d13cbd66dfd4dafba2a9451.bindTooltip(
+                `<div>
+                     188480, Ленинградская область, Кингисеппский район, город Кингисепп, Октябрьская ул., д. 26, пом/офис 1-н/1 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a1ad1f7b707d36be2dc368f69b7dd1c = L.marker(
+                [55.756999, 37.860585],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_3f7a55b821e5ab47646a67accb9b976d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4343bda50d59c99026ea6bd0b098d121 = $(`<div id="html_4343bda50d59c99026ea6bd0b098d121" style="width: 100.0%; height: 100.0%;">Клиент №33</div>`)[0];
+            popup_3f7a55b821e5ab47646a67accb9b976d.setContent(html_4343bda50d59c99026ea6bd0b098d121);
+        
+
+        marker_3a1ad1f7b707d36be2dc368f69b7dd1c.bindPopup(popup_3f7a55b821e5ab47646a67accb9b976d)
+        ;
+
+        
+    
+    
+            marker_3a1ad1f7b707d36be2dc368f69b7dd1c.bindTooltip(
+                `<div>
+                     143964, Московская область, г Реутов, Ашхабадская ул, д. 27, этаж 1 помещ./ком. IV/5 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a307282eb0c59a76f49a607f6bf0e75e = L.marker(
+                [59.874964, 30.312661],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_8dfa820f67e819d1ef4f2d04ad554735 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1130a035cb51755376e4058923d91b41 = $(`<div id="html_1130a035cb51755376e4058923d91b41" style="width: 100.0%; height: 100.0%;">Клиент №34</div>`)[0];
+            popup_8dfa820f67e819d1ef4f2d04ad554735.setContent(html_1130a035cb51755376e4058923d91b41);
+        
+
+        marker_a307282eb0c59a76f49a607f6bf0e75e.bindPopup(popup_8dfa820f67e819d1ef4f2d04ad554735)
+        ;
+
+        
+    
+    
+            marker_a307282eb0c59a76f49a607f6bf0e75e.bindTooltip(
+                `<div>
+                     196128, город Санкт-Петербург, Варшавская ул., д.19 корпус 1.литер а .пом.27-н, офис 9 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9eecaf1271bdee8a261c0e2f17fe3a50 = L.marker(
+                [55.755819, 37.617644],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_4ea73e8930af135b08f7d354fafe9f15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64406aa84e69cec171962e1f5569575f = $(`<div id="html_64406aa84e69cec171962e1f5569575f" style="width: 100.0%; height: 100.0%;">Клиент №35</div>`)[0];
+            popup_4ea73e8930af135b08f7d354fafe9f15.setContent(html_64406aa84e69cec171962e1f5569575f);
+        
+
+        marker_9eecaf1271bdee8a261c0e2f17fe3a50.bindPopup(popup_4ea73e8930af135b08f7d354fafe9f15)
+        ;
+
+        
+    
+    
+            marker_9eecaf1271bdee8a261c0e2f17fe3a50.bindTooltip(
+                `<div>
+                     г. Москва, вн.тер. г. Муниципальный округ Пресненский, ул. Антонова-Овсеенко, д. 4, помещ. 1/1б
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_111234bbe080b86ef5f42c76edb7316a = L.marker(
+                [59.891868, 30.489494],
+                {}
+            ).addTo(marker_cluster_220d374cc6cdb098aa747822a45bcf3e);
+        
+    
+        var popup_2a60b6fc973991596782322367560384 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96065a8c73c0a454f4396f7a087666ca = $(`<div id="html_96065a8c73c0a454f4396f7a087666ca" style="width: 100.0%; height: 100.0%;">Клиент №36</div>`)[0];
+            popup_2a60b6fc973991596782322367560384.setContent(html_96065a8c73c0a454f4396f7a087666ca);
+        
+
+        marker_111234bbe080b86ef5f42c76edb7316a.bindPopup(popup_2a60b6fc973991596782322367560384)
+        ;
+
+        
+    
+    
+            marker_111234bbe080b86ef5f42c76edb7316a.bindTooltip(
+                `<div>
+                     г. Санкт-Петербург, вн.тер. г. муниципальный округ Народный, ул. Тельмана, д. 51, лит А
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
