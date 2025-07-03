@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <title>География клиентов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+  
+<style>
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .header-text {
+            text-align: left;
+            margin-top: 10px;
+        }
+        #search, #theme-toggle {
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+
+    html, body {
+      height: 100%; margin: 0; padding: 0;
+      font-family: 'Manrope', sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: linear-gradient(120deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      height: 60px;
+    }
+    .header-text {
+      flex: 1;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    #search, #theme-toggle {
+      padding: 5px 10px;
+      border-radius: 4px;
+      border: none;
+      margin-left: 10px;
+    }
+    #map {
+      width: 100%;
+      height: calc(100% - 90px);
+    }
+  
+    
+body header {
+    background: linear-gradient(135deg, #8e0e00, #1f1c2c);
+}
+body.dark header {
+    background: linear-gradient(135deg, #8e0e00, #1f1c2c);
+
+        background: linear-gradient(120deg, #000428, #004e92);
+    }
+    body.dark {
+        background: #111;
+        color: #eee;
+    }
+    body.dark input,
+    body.dark button {
+        background: #2c3e50;
+        color: white;
+    }
+
+    
+body header {
+    background: linear-gradient(135deg, #8e0e00, #1f1c2c);
+}
+body.dark header {
+    background: linear-gradient(135deg, #8e0e00, #1f1c2c);
+
+        background: linear-gradient(135deg, #8e0e00, #1f1c2c);
+    }
+    body.dark {
+        background: #111;
+        color: white;
+    }
+    body.dark input, body.dark button {
+        background: #2c3e50;
+        color: white;
+        border: 1px solid #999;
+    }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="logo-footer.png" alt="Логотип" style="height:60px; object-fit:contain;" onerror="this.style.display='none'">
+  </div>
+  <div class="header-text">
+    <h1>География клиентов компании</h1>
+    <p>Интерактивная карта с кластерами и поиском по № клиента</p>
+  </div>
+  <div>
+    <input type="text" id="search" placeholder="Поиск по № клиента">
+    <button id="theme-toggle">Сменить тему</button>
+  </div>
+</header>
+<div id="map"></div>
+
+<script>
+function applyTheme(theme) {
+  document.body.classList.toggle("dark", theme === 'dark');
+}
+
+  const map = L.map('map').setView([58, 60], 4);
+  const light = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+  const dark = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap & CartoDB'
+  });
+  let currentTheme = 'light'; applyTheme('light');
+
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    if (currentTheme === 'light') {
+      map.removeLayer(light);
+      map.addLayer(dark);
+      currentTheme = 'dark'; applyTheme('dark');
+    } else {
+      map.removeLayer(dark);
+      map.addLayer(light);
+      currentTheme = 'light'; applyTheme('light');
+    }
+  });
+
+  const markers = L.markerClusterGroup();
+  const markerList = [];
+
+  document.getElementById('search').addEventListener('input', function() {
+    const value = this.value.trim();
+    markerList.forEach(m => {
+      if (!value || m.options.title.includes(value)) {
+        markers.addLayer(m);
+      } else {
+        markers.removeLayer(m);
+      }
+    });
+  });
+
+  const sheetID = '102mcp0y13lbWtMdK7eZftYUWH9VtEz6icNQTfi-hIRQ';
+  const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:csv`;
+
+  Papa.parse(sheetURL, {
+    download: true,
+    header: true,
+    complete: function(results) {
+      const data = results.data;
+      data.forEach(row => {
+        if (row["Координаты"]) {
+          const coords = (row["Координаты"] || "").split(",");
+          const lat = parseFloat(coords[0].trim());
+          const lng = parseFloat(coords[1].trim());
+          const number = row["№"];
+          const address = row["Юридический адрес"];
+          const city = row["Город/Регион"];
+          if (!isNaN(lat) && !isNaN(lng)) {
+            const marker = L.marker([lat, lng], {title: number});
+            marker.bindPopup(`<b>Клиент №${number}</b><br>${address}<br><i>${city}</i>`);
+            markers.addLayer(marker);
+            markerList.push(marker);
+          }
+        }
+      });
+      map.addLayer(markers);
+    }
+  });
+</script>
+</body>
+</html>
